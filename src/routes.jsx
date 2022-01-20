@@ -1,12 +1,13 @@
 import React  from "react";
 import { Route, Routes } from "react-router-dom";
-import {Hatspage, Homepage} from "./pages/index";
+import {Hatspage, Homepage, Shoppage} from "./pages/index";
 
 const RoutesApp = () => (
     <div>
         <Routes>
             <Route exact path='/' element= {<Homepage />}/>
-            <Route exact path='/hats' element= {<Hatspage/>}/>
+            <Route  path='/hats' element= {<Hatspage/>}/>
+            <Route  path='/shop' element= {<Shoppage/>}/>
         </Routes>
     </div>
     
