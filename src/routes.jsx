@@ -1,6 +1,11 @@
 import React  from "react";
 import { Route, Routes } from "react-router-dom";
-import {Hatspage, Homepage, Shoppage} from "./pages/index";
+import {
+    Hatspage, 
+    Homepage, 
+    Shoppage,
+    SignInAndSignUp
+} from "./pages/index";
 
 const RoutesApp = () => (
     <div>
@@ -8,6 +13,7 @@ const RoutesApp = () => (
             <Route exact path='/' element= {<Homepage />}/>
             <Route  path='/hats' element= {<Hatspage/>}/>
             <Route  path='/shop' element= {<Shoppage/>}/>
+            <Route  path='/signin' element= {<SignInAndSignUp/>}/>
         </Routes>
     </div>
     
